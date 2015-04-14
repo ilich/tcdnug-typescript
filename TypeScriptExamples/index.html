@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Twin Cities .NET User Group: Introduction to TypeScript</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+</head>
+<body>
+    <h1>TypeScript Examples</h1>
+    <div class="examples">
+        <button id="zoo">Zoo</button>
+    </div>
+
+    <div id="output"></div>
+
+    <script src="textwriter.js"></script>
+    <script src="zoo.js"></script>
+    <script>
+        var zoo = document.getElementById("zoo");
+        zoo.addEventListener("click", function () {
+            Zoo.Program.run("output");
+        });
+    </script>
+</body>
+</html>
