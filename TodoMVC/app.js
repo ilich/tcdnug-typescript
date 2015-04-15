@@ -59,7 +59,6 @@ var TodoMVC;
             this.currentNote('');
         };
         AppViewModel.prototype.remove = function (note) {
-            console.log(this);
             this.todos.remove(note);
         };
         return AppViewModel;

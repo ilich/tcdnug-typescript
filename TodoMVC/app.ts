@@ -65,7 +65,6 @@ module TodoMVC {
         }
 
         remove(note: Note) {
-            console.log(this);
             this.todos.remove(note);
         }
     }

@@ -9,7 +9,7 @@
     // sample1(50); // error: bad input object
     sample1({ id: 50, value: "test", enabled: false });
 
-    function sample2(foo: { id: number; value: string, enabled: boolean }) {
+    function sample2(foo: { id: number; value: string; enabled: boolean }) {
     }
 
     // sample2({ id: 50, value: "test" });  // error: required "enabled" field is missing
