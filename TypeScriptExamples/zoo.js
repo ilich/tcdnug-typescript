@@ -39,7 +39,8 @@ var Zoo;
         };
         BaseAnimal.prototype.do = function (msg) {
             var regionName = Region[this.region];
-            var text = regionName + "/" + this.name + ": " + msg;
+            // ES6 template string
+            var text = "" + regionName + " / " + this.name + ": " + msg;
             writer.write(text);
         };
         return BaseAnimal;
@@ -122,6 +123,10 @@ var Zoo;
             zoo.add(bass, trout, albatross, ostrich, emu);
             for (var i = 0; i < 5; i++) {
                 var animal = zoo.getById(i);
+                // https://github.com/Microsoft/TypeScript/wiki/What%27s-new-in-TypeScript
+                // only for ES6 (TypeScript 1.4) and ES3/ES5 (TypeScript 1.5)
+                // TypeScript 1.5: const keyword support
+                // let animal = zoo.getById(i);    
                 if (i % 2 == 0) {
                     animal.eat();
                 }
@@ -129,6 +134,7 @@ var Zoo;
                     animal.sleep();
                 }
             }
+            writer.write("The last animal in the loop: " + animal.name);
             bass.swim();
             ostrich.fly();
             writer.write("Total Birds: " + Bird.totalBirds);

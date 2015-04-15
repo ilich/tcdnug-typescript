@@ -47,7 +47,9 @@ module Zoo {
 
         protected do(msg: string) {
             var regionName = Region[this.region];
-            var text = regionName + "/" + this.name + ": " + msg;
+
+            // ES6 template string
+            var text = `${regionName} / ${this.name}: ${msg}`;
             writer.write(text);
         }
     } 
@@ -83,7 +85,7 @@ module Zoo {
 
         fly() {
             this.do("Fly");
-            writer.write("Bird's Weight: " + this.weight);
+            writer.write(`Bird's Weight: ${this.weight}`);
         }
     }
 
@@ -128,6 +130,13 @@ module Zoo {
 
             for (var i = 0; i < 5; i++) {
                 var animal = zoo.getById(i);
+
+                // https://github.com/Microsoft/TypeScript/wiki/What%27s-new-in-TypeScript
+                // only for ES6 (TypeScript 1.4) and ES3/ES5 (TypeScript 1.5)
+                // TypeScript 1.5: const keyword support
+
+                // let animal = zoo.getById(i);    
+
                 if (i % 2 == 0) {
                     animal.eat();
                 }
@@ -136,10 +145,12 @@ module Zoo {
                 }
             }
 
+            writer.write(`The last animal in the loop: ${animal.name}`);
+
             bass.swim();
             ostrich.fly();
 
-            writer.write("Total Birds: " + Bird.totalBirds); 
+            writer.write(`Total Birds: ${Bird.totalBirds}`); 
         }
     }
 }
