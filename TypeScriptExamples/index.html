@@ -9,6 +9,7 @@
 <body>
     <h1>TypeScript Examples</h1>
     <div class="examples">
+        <button id="funcs">Functions</button>
         <button id="zoo">Zoo</button>
         <button id="mixins">Mixins</button>
     </div>
@@ -16,9 +17,15 @@
     <div id="output"></div>
 
     <script src="textwriter.js"></script>
+    <script src="functions.js"></script>
     <script src="zoo.js"></script>
     <script src="mixins.js"></script>
     <script>
+        var funcs = document.getElementById("funcs");
+        funcs.addEventListener("click", function () {
+            Functions.Program.run("output");
+        });
+
         var zoo = document.getElementById("zoo");
         zoo.addEventListener("click", function () {
             Zoo.Program.run("output");

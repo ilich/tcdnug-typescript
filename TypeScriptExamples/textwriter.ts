@@ -10,7 +10,9 @@
         this.element.innerHTML = "";
     }
 
-    write(msg: string) {
+    write(msg: number);
+    write(msg: string);
+    write(msg: any) {
         var msgElement = document.createElement("div");
         msgElement.innerText = msg;
         this.element.appendChild(msgElement);
