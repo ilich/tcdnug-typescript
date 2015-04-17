@@ -23,6 +23,7 @@
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="datatypes.ts" />
     <TypeScriptCompile Include="functions.ts" />
     <TypeScriptCompile Include="interfaces.ts" />
     <TypeScriptCompile Include="mixins.ts" />

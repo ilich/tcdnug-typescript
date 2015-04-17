@@ -44,6 +44,15 @@ var Functions;
             return "String: " + a;
         }
     }
+    // Overloading using union types
+    function myFunction1(a) {
+        if (typeof a == "number") {
+            return "Number: " + a;
+        }
+        else if (typeof a == "string") {
+            return "String: " + a;
+        }
+    }
     var SampleLambda = (function () {
         function SampleLambda() {
             this.a = 50;
@@ -78,6 +87,10 @@ var Functions;
             writer.write(myFunction("test"));
             writer.write(myFunction(22));
             // writer.write(myFunction({ a: 50 })); // Error: input parameter has to be number or string
+            writer.write("------------------");
+            writer.write(myFunction1("test"));
+            writer.write(myFunction1(22));
+            // writer.write(myFunction1({ a: 50 })); // Error: input parameter has to be number or string
             writer.write("------------------");
             var foo = new SampleLambda();
             var func = foo.getFieldGetter();

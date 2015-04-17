@@ -51,6 +51,15 @@ module Functions {
         }
     }
 
+    // Overloading using union types
+    function myFunction1(a: number|string) {
+        if (typeof a == "number") {
+            return `Number: ${a}`;
+        } else if (typeof a == "string") {
+            return `String: ${a}`;
+        }
+    }
+
     class SampleLambda {
         a: number = 50;
 
@@ -86,6 +95,11 @@ module Functions {
             writer.write(myFunction("test"));
             writer.write(myFunction(22));
             // writer.write(myFunction({ a: 50 })); // Error: input parameter has to be number or string
+            writer.write("------------------");
+
+            writer.write(myFunction1("test"));
+            writer.write(myFunction1(22));
+            // writer.write(myFunction1({ a: 50 })); // Error: input parameter has to be number or string
             writer.write("------------------");
 
             var foo = new SampleLambda();
