@@ -24,6 +24,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="interfaces.ts" />
+    <TypeScriptCompile Include="mixins.ts" />
     <TypeScriptCompile Include="textwriter.ts" />
     <TypeScriptCompile Include="zoo.ts" />
   </ItemGroup>

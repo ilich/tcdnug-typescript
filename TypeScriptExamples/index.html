@@ -10,16 +10,23 @@
     <h1>TypeScript Examples</h1>
     <div class="examples">
         <button id="zoo">Zoo</button>
+        <button id="mixins">Mixins</button>
     </div>
 
     <div id="output"></div>
 
     <script src="textwriter.js"></script>
     <script src="zoo.js"></script>
+    <script src="mixins.js"></script>
     <script>
         var zoo = document.getElementById("zoo");
         zoo.addEventListener("click", function () {
             Zoo.Program.run("output");
+        });
+
+        var mixins = document.getElementById("mixins");
+        mixins.addEventListener("click", function () {
+            Mixins.Program.run("output");
         });
     </script>
 </body>
