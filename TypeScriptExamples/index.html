@@ -12,6 +12,7 @@
         <button id="funcs">Functions</button>
         <button id="zoo">Zoo</button>
         <button id="mixins">Mixins</button>
+        <button id="generics">Generics</button>
     </div>
 
     <div id="output"></div>
@@ -20,21 +21,19 @@
     <script src="functions.js"></script>
     <script src="zoo.js"></script>
     <script src="mixins.js"></script>
+    <script src="generics.js"></script>
     <script>
-        var funcs = document.getElementById("funcs");
-        funcs.addEventListener("click", function () {
-            Functions.Program.run("output");
-        });
+        function clickEvent(target, program) {
+            var element = document.getElementById(target);
+            element.addEventListener("click", function () {
+                program.run("output");
+            })
+        }
 
-        var zoo = document.getElementById("zoo");
-        zoo.addEventListener("click", function () {
-            Zoo.Program.run("output");
-        });
-
-        var mixins = document.getElementById("mixins");
-        mixins.addEventListener("click", function () {
-            Mixins.Program.run("output");
-        });
+        clickEvent("funcs", Functions.Program);
+        clickEvent("zoo", Zoo.Program);
+        clickEvent("mixins", Mixins.Program);
+        clickEvent("generics", Generics.Program);
     </script>
 </body>
 </html>
