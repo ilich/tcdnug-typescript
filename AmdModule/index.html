@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+</head>
+<body>
+    <h1>TypeScript HTML App</h1>
+
+    <button id="runTest">Run Test</button>
+
+    <script src="Scripts/require.js"></script>
+    <script>
+        requirejs.config({
+            baseUrl: 'Scripts/Modules',
+        });
+
+        requirejs(['module1', 'module2'], function (module1, module2) {
+            var runTest = document.getElementById("runTest");
+            runTest.addEventListener("click", function () {
+                alert("[1] Using Module1");
+                var test1 = new module1.Class1();
+                test1.test();
+
+                alert("[2] Using Module2");
+                var test2 = new module2.Class2();
+                test2.test();
+            });
+        });
+    </script>
+</body>
+</html>

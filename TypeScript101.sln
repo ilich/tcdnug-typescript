@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpZoo", "CSharpZoo\CSha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeScriptExamples", "TypeScriptExamples\TypeScriptExamples.csproj", "{DCAFF332-A07F-4CB7-AC5C-F6A798218A0B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CombineInternalModules", "CombineInternalModules\CombineInternalModules.csproj", "{6064B76F-2B51-4B61-B5F6-7AE01CA6566A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmdModule", "AmdModule\AmdModule.csproj", "{C2E0A0A0-6AF7-4346-AA68-C4E3A01BB8F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{DCAFF332-A07F-4CB7-AC5C-F6A798218A0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCAFF332-A07F-4CB7-AC5C-F6A798218A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCAFF332-A07F-4CB7-AC5C-F6A798218A0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6064B76F-2B51-4B61-B5F6-7AE01CA6566A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6064B76F-2B51-4B61-B5F6-7AE01CA6566A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6064B76F-2B51-4B61-B5F6-7AE01CA6566A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6064B76F-2B51-4B61-B5F6-7AE01CA6566A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2E0A0A0-6AF7-4346-AA68-C4E3A01BB8F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2E0A0A0-6AF7-4346-AA68-C4E3A01BB8F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2E0A0A0-6AF7-4346-AA68-C4E3A01BB8F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2E0A0A0-6AF7-4346-AA68-C4E3A01BB8F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
