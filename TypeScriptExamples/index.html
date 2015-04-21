@@ -13,6 +13,7 @@
         <button id="zoo">Zoo</button>
         <button id="mixins">Mixins</button>
         <button id="generics">Generics</button>
+        <button id="merging">Declaration Merging</button>
     </div>
 
     <div id="output"></div>
@@ -22,6 +23,7 @@
     <script src="zoo.js"></script>
     <script src="mixins.js"></script>
     <script src="generics.js"></script>
+    <script src="declaration-merging.js"></script>
     <script>
         function clickEvent(target, program) {
             var element = document.getElementById(target);
@@ -34,6 +36,7 @@
         clickEvent("zoo", Zoo.Program);
         clickEvent("mixins", Mixins.Program);
         clickEvent("generics", Generics.Program);
+        clickEvent("merging", DeclarationMergingTest.Program);
     </script>
 </body>
 </html>

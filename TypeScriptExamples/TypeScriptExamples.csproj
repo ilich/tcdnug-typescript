@@ -24,6 +24,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="datatypes.ts" />
+    <TypeScriptCompile Include="declaration-merging.ts" />
     <TypeScriptCompile Include="functions.ts" />
     <TypeScriptCompile Include="generics.ts" />
     <TypeScriptCompile Include="interfaces.ts" />
