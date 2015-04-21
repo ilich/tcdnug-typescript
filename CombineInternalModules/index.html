@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>TypeScript HTML App</h1>
+
+    <button id="runTest">Run Test</button>
+    <script>
+        var runTest = document.getElementById("runTest");
+        runTest.addEventListener("click", function () {
+            var test1 = new Module1.Class1();
+            test1.test();
+            var test2 = new Module2.Class2();
+            test2.test();
+        });
+    </script>
+</body>
+</html>
