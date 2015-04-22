@@ -14,7 +14,7 @@
     write(msg: string);
     write(msg: any) {
         var msgElement = document.createElement("div");
-        msgElement.innerText = msg;
+        msgElement.textContent = msg;
         this.element.appendChild(msgElement);
     }
 } 
