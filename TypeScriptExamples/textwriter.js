@@ -8,7 +8,7 @@ var TextWriter = (function () {
     }
     TextWriter.prototype.write = function (msg) {
         var msgElement = document.createElement("div");
-        msgElement.textContent = msg;
+        msgElement.textContent = msg.toString();
         this.element.appendChild(msgElement);
     };
     return TextWriter;

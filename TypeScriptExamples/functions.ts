@@ -41,6 +41,7 @@ module Functions {
         return numbers.join(", ");
     }
 
+    // Overloading
     function myFunction(a: number);
     function myFunction(a: string);
     function myFunction(a: any) {

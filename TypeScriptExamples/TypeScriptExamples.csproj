@@ -29,6 +29,7 @@
     <TypeScriptCompile Include="generics.ts" />
     <TypeScriptCompile Include="interfaces.ts" />
     <TypeScriptCompile Include="mixins.ts" />
+    <TypeScriptCompile Include="overloading-on-string.ts" />
     <TypeScriptCompile Include="textwriter.ts" />
     <TypeScriptCompile Include="zoo.ts" />
   </ItemGroup>

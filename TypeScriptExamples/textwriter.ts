@@ -10,11 +10,9 @@
         this.element.innerHTML = "";
     }
 
-    write(msg: number);
-    write(msg: string);
-    write(msg: any) {
+    write(msg: number|string|boolean) {
         var msgElement = document.createElement("div");
-        msgElement.textContent = msg;
+        msgElement.textContent = msg.toString();
         this.element.appendChild(msgElement);
     }
 } 
